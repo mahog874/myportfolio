@@ -5,11 +5,41 @@ body {
     align-content: center;
    
 }
+nav {
+    height: 25px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    
+}
+
 header {
     height: 20px;
     width: 100%;
-    background-color: antiquewhite;
+    font-size: 35px;
+    margin-bottom: 10px;
     
-    
+}
+.bio {
+    height: 200px;
+    border:solid 1px black;
+    border-radius: 5px;
+    margin: 20px;
+
+
+}
+.work {
+    height: 200px;
+    border:solid 1px black;
+    border-radius: 5px;
+    margin: 20px;
+
+}
+.info {
+    height: 200px;
+    border:solid 1px black;
+    border-radius: 5px;
+    margin: 20px;
 
 }
