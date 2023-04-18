@@ -1,8 +1,11 @@
 body {
-    background-image: url(https://cdn.w600.comps.canstockphoto.com/black-woman-curly-hair-afro-female-drawing_csp89612090.jpg) ;
+    background-image: url(/Users/mahoganycoleman/bootcamp/assignments/portfolio/index/pictures/DSC01824.JPG);
     background-repeat: no-repeat ;
     background-size: cover;
     align-content: center;
+    background-attachment: fixed;
+    max-width: auto;
+    max-height: 50%;
    
 }
 nav {
