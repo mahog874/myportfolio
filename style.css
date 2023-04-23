@@ -1,24 +1,23 @@
-
 body {
-    background-color: blanchedalmond;
-    
-    max-width: auto;
-    max-height: 50%;
+    margin-left: 100px; /* Add margin to the left of the body */
     background-image: url('/Users/mahoganycoleman/bootcamp/assignments/portfolio/index/pictures/DSC01008.jpeg'); 
     background-size: cover; /* Scale the background image to cover the entire body */
-    background-position: center;
-    
+    background-position: 35% center; /* Move the background image 10% to the right and center it vertically */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
+
+
 
 .work{
     display:flex;
     flex-direction: row;
-    margin-left: 250px;
+    margin-left: 300px;
 }
 nav {
     height: 25px;
     text-align: center;
-    margin-left: 250px;
+    margin-left: 300px;
+    
 }
 img {
     object-fit: contain;
@@ -29,31 +28,42 @@ h1 {
     text-align: center;
     
 }
+h1, h2, h3 {
+    color:rgb(71, 3, 68) ;
+    
+}
 
 header {
     height: 20px;
     width: 100%;
-    font-size: 35px;
+    font-size: 50px;
     margin-bottom: 10px;
+    color: rgb(238, 8, 92);
+    font-weight: bolder;
+    
     
 }
 .bio {
     height: 500px;
-    border:solid 1px black;
+    border:solid 3px rgb(29, 142, 121);
     border-radius: 5px;
     margin: 20px;
     margin-left: 250px;
+    color:rgb(71, 3, 68) ;
+    background-color: beige;
+    opacity: 0.5;
 
 
 }
 
 .info {
     height: 500px;
-    border:solid 1px black;
+    border:solid 3px rgb(29, 142, 121);
     border-radius: 5px;
     margin: 20px;
     margin-left: 250px;
-
+    background-color: beige;
+    opacity: 0.5;
 }
 /*.codes {
     
@@ -85,22 +95,43 @@ ul.portfolio-list {
     list-style-type: none;
 }
 
+  
+
 ul.portfolio-list li {
     flex-basis: 30%;
     margin-right: 20px;
     position: relative;
-    border: 3px solid white; /* You can customize the color here */
-    padding: 20px; /* Add padding to separate the projects from the border */
+   
+    padding: 50px; /* Add padding to separate the projects from the border */
     box-sizing: border-box; /* Include border in element's box */
+    
 }
+
 
 /* Set image styles */
 img {
     max-width: 100%;
     height: auto;
+    
 }
+
 
 /* Set hover effect on images */
 ul.portfolio-list li img:hover {
     opacity: 0.8;
+}
+
+ul.portfolio-list li:first-child img {
+    transform: scale(1.2); /* Set the scale of the image to 1.2 (20% larger) */
+  }
+  
+@media (max-width: 500px) {
+    .portfolio-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-list li {
+        flex-basis: 100%;
+    }
 }
