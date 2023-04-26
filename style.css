@@ -1,8 +1,8 @@
 body {
-    background-image: url('/Users/mahoganycoleman/bootcamp/assignments/portfolio/index/pictures/DSC00537 3.jpg'); 
-    background-size: 100% 110%;
+    background-image: url('/Users/mahoganycoleman/bootcamp/assignments/portfolio/index/pictures/DSC01008.jpg'); 
     background-position: cover;
     background-repeat: no-repeat;
+    background-position: 35% 0%;
 }
 
 
@@ -45,6 +45,7 @@ h2, h3 {
     color:white;
     text-align: left;
     font-size: 30px;
+    padding-bottom: 20px;
     
 }
 .column1 {
@@ -77,6 +78,7 @@ header {
     align-items: right;
     width: 50%;
     font-size: 20px;
+    transform: skew(-2deg);
 
 }
 
@@ -99,21 +101,21 @@ header {
     border-radius: 5px;
     margin: 20px;
 }
-/* Reset default styles */
+
 body, figure, img, p {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Set font styles */
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Set layout styles */
+
 ul.portfolio-list {
     display: flex;
     justify-content: space-between;
@@ -128,13 +130,13 @@ ul.portfolio-list li {
     margin-right: 20px;
     position: relative;
    
-    padding: 50px; /* Add padding to separate the projects from the border */
-    box-sizing: border-box; /* Include border in element's box */
+    padding: 50px; 
+    box-sizing: border-box; 
     
 }
 
 
-/* Set image styles */
+
 img {
     max-width: 100%;
     height: auto;
@@ -142,13 +144,13 @@ img {
 }
 
 
-/* Set hover effect on images */
+
 ul.portfolio-list li img:hover {
     opacity: 0.8;
 }
 
 ul.portfolio-list li:first-child img {
-    transform: scale(1.2); /* Set the scale of the image to 1.2 (20% larger) */
+    transform: scale(2.1); 
   }
   .footer {
     background-color: #1c1c1c;
@@ -157,11 +159,20 @@ ul.portfolio-list li:first-child img {
   text-align: center;
   }
   
-@media (max-width: 500px) {
-    .portfolio-list {
+@media screen and (max-width: 768px) {
+    body {
+        background-image: none;
+        background-color: gray;
+    }
+    .column2 {
+      width:100%;  
+    } 
+}
+    /*.portfolio-list {
         flex-direction: column;
         align-items: center;
     }
+    
 
     .portfolio-list li {
         flex-basis: 100%;
@@ -169,8 +180,8 @@ ul.portfolio-list li:first-child img {
 }
 
 #aboutme {
-    text-align: left; /* Set text-align property to left */
-    margin-left: 0; /* Set margin-left property to 0 to move the element to the left */
+    text-align: left; 
+    margin-left: 0; 
   }
   
 
